@@ -1,6 +1,3 @@
-import './index.html';
-import './style.css';
-
 let upLikes = 0;
 let downLikes = 0;
 
@@ -18,4 +15,3 @@ btnDown.addEventListener('click', () => {
   const likesDownElm = document.querySelector('#likes-down');
   likesDownElm.textContent = downLikes;
 });
-
