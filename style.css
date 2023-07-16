@@ -45,3 +45,6 @@ h1{
   flex-direction: row;
   justify-content: space-between;
 }
+#row img{
+  border-radius: 50%;
+}
