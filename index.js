@@ -1,17 +1,11 @@
-let upLikes = 0;
-let downLikes = 0;
-
-const btnUp = document.querySelector('#btn-up');
-const btnDown = document.querySelector('#btn-down');
-
-btnUp.addEventListener('click', () => {
-  upLikes += 1;
-  const likesUpElm = document.querySelector('#likes-up');
-  likesUpElm.textContent = upLikes;
-});
-
-btnDown.addEventListener('click', () => {
-  downLikes += 1;
-  const likesDownElm = document.querySelector('#likes-down');
-  likesDownElm.textContent = downLikes;
-});
+document.getElementById('btn').addEventListener('click', joke)
+async function joke(){
+  let config = {
+    headers: {
+      Accept: "application/json"
+    }
+  }
+  let a = await fetch("https://icanhazdadjoke.com/", config)
+  let b = await a.json()
+  document.getElementById('content').innerHTML = b.joke
+}
