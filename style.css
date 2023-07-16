@@ -48,3 +48,16 @@ h1{
 #row img{
   border-radius: 50%;
 }
+@media only screen and (max-width: 600px){
+  h1{
+    font-size: 5vh;
+
+  
+  }
+ 
+  #row img{
+    height: 100px;
+    margin-top: 35px
+  }
+
+}
